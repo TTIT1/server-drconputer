@@ -1,5 +1,6 @@
 # Use OpenJDK 17 slim image
-FROM openjdk:17-jdk-slim
+FROM eclipse-temurin:23-jdk as builder
+
 WORKDIR /app
 
 # Copy the existing JAR file
